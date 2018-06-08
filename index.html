@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>真命天子</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="plugin/materialize/css/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper red darken-4">
+            <a href="#" class="brand-logo">
+                <i class=""><img src="images/logo.png" alt=""></i> 真命天子
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <button class="btn waves-effect waves-light" onclick="create()">创建房间</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container wrap">
+
+        <div class="row">
+            <b style="color: #B71C1C">“真命天子”是一款基于星云链智能合约的多人投注，抽取一名幸运玩家赢走奖池全部奖金的博彩类小游戏。任何玩家可以自由创建房间指定参与人数和押注价格，招募其他玩家参与博彩。合约支持房间人数达到要求自动开奖，随机选出一名玩家作为“真命天子”，发放奖金到其账户。</b>
+        </div>
+        <div class="row wallet_message">
+            <ul>
+                <li>
+                    <label for="">钱包地址:</label>
+                    <span id="address"></span>
+                </li>
+                <li>
+                    <label for="">钱包余额:</label>
+                    <span id="balance"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="row" id="houselist">
+
+        </div>
+    </div>
+    <div id="create_room" style="display: none;">
+        <div class="input-field col s12">
+            <input placeholder="请输入房间名称" id="house_name" type="text" class="validate">
+            <label for="house_name">房间名称</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="number" placeholder="请输入房间人数，至少为2人，至多为100人" type="number" class="validate">
+            <label for="number">房间人数</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="price" placeholder="请输入每人投注的金额" type="number" class="validate">
+            <label for="price">参与价格</label>
+        </div>
+    </div>
+
+
+
+    <script src="plugin/jquery-3.3.1.min.js"></script>
+    <script src="plugin/materialize/js/materialize.min.js"></script>
+    <script src="plugin/layer/layer.js"></script>
+
+    <script src="dist/nebulas.min.js"></script>
+    <script src="dist/nebPay.min.js"></script>
+    <script src="https://cdn.bootcss.com/bignumber.js/7.2.1/bignumber.js"></script>
+    <script src="js/option.js"></script>
+    <script src="dist/wallet.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+.brand-logo img {
+  width: 55px;
+}
+
+nav > .nav-wrapper {
+  padding: 0 20px;
+}
+
+.wrap {
+  padding: 40px 0;
+}
+
+.card-title {
+  display: inline-block;
+  width: 100%;
+  padding: 8px !important;
+  background: #000;
+  opacity: 0.7;
+}
+
+.card-content > ul > li {
+  height: 45px;
+  line-height: 45px;
+}
+
+.card-content > ul > li > progress {
+  width: 100%;
+}
+
+.card-image {
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+.card-image:hover .item_state_image {
+  transform: scale(0.5);
+}
+
+.card-image .item_state_icon_wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 33;
+}
+
+.card-image .item_state_image {
+  width: 100%;
+  height: 250px;
+  transition: all 0.5s;
+}
+
+.layui-layer.layui-layer-page {
+  min-width: 500px;
+}
+
+#create_room {
+  padding: 20px;
+}
+
+.item_detail > li {
+  display: flex;
+}
+
+.item_detail > li span {
+  display: inline-block;
+}
+
+.item_detail > li span:first-child {
+  width: 80px;
+}
+
+.item_detail > li span:last-child {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.item_detail > li span.text-red {
+  color: #b71c1c;
+}
+
+.goInBtn {
+  margin-top: 5px;
+}
+
+.progress_value {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 60px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 3px;
+  background: #333;
+  color: #fff;
+}
+
+.progress_value:after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 22px;
+  width: 0;
+  height: 0;
+  border: 8px solid #333;
+  border-color: #333 transparent transparent;
+}
